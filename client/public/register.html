@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="icon" type="image/png" href="../assets/icons/favicon_io/favicon-32x32.png">
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="./index.html" class="logo-link">
+        <div class="logo">to<span class="low-text">do</span>track</div>
+      </a>
+      <nav class="header-menu">
+        <ul class="header-menu-list">
+          <li class="header-menu-item">
+            <a href="./index.html" class="header-menu-link">Home</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="./index.html" class="header-menu-link">About</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="./index.html" class="header-menu-link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="header-button button button-text" onclick="window.location.href='./login.html'">Sign In</button>
+        <button class="header-button button" onclick="window.location.href='./register.html'">Sign Up</button>
+      </div>
+    </header>
+    <main class="content">
+        <section class="register container-screen">
+            <form action="" class="auth form">
+                <header class="auth form-header">
+                    <h2 class="auth form-title centered">
+                        Sign Up
+                    </h2>
+                    <div class="auth form-subtitle centered">Create an account to get started</div>
+                </header>
+                <div class="auth form-body">
+                    <label class="visually-hidden" for="full-name">Full Name</label>
+                    <div class="auth form-input-wrapper">
+                        <i class="icon user-icon"></i>
+                        <input type="text" id="full-name" class="auth form-input input" placeholder="Enter your Full Name" required />
+                    </div>
+                    
+                    <label class="visually-hidden" for="email">Email</label>
+                    <div class="auth form-input-wrapper">
+                        <i class="icon email-icon"></i>
+                        <input type="email" id="email" class="auth form-input input" placeholder="Enter your Email" required />
+                    </div>
+            
+                    <label class="visually-hidden" for="password">Password</label>
+                    <div class="auth form-input-wrapper">
+                        <i class="icon password-icon"></i>
+                        <input type="password" id="password" class="auth form-input input" placeholder="Enter your Password" required />
+                        <i class="icon eye-icon"></i>
+                    </div>
+            
+                    <label class="visually-hidden" for="confirm-password">Confirm Password</label>
+                    <div class="auth form-input-wrapper">
+                        <i class="icon password-icon"></i>
+                        <input type="password" id="confirm-password" class="auth form-input input" placeholder="Confirm your Password" required />
+                        <i class="icon eye-icon"></i>
+                    </div>
+            
+                    <div class="auth form-options">
+                        <div>
+                            <input type="checkbox" id="terms" required />
+                            <label for="terms">I agree to the Terms & Conditions</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="auth form-button button button-submit">Sign Up</button>
+                    <p class="auth form-text centered">Already have an account? <a href="./login.html" class="auth form-link">Sign In</a></p>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer" id="contacts">
+      <div class="footer-container container">
+        <header class="footer-header">
+          <div class="logo">to<span class="low-text">do</span>track</div>
+          <p class="footer-description">Developed & Designed by Anastasiia Klishch. &copy; 2025</p>
+        </header>
+        <div class="footer-body"></div>
+      </div>
+    </footer>
+    <script src="../scripts/api/register.js"></script>
+  </body>
+</html>
